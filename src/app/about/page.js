@@ -1,8 +1,9 @@
+"use client"
+
 import React, { useEffect } from 'react';
 import Navbar from "@/components/navbar";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 export default function AboutPage() {
 
   // Initialize AOS for scroll animations
@@ -12,10 +13,12 @@ export default function AboutPage() {
 
   return (
     <>
+    <Navbar/>
       <div
-        className="max-w-7xl mx-auto w-[70%] md:w-[80%] bg-white p-8 rounded-xl shadow-2xl mt-10"
+        className="max-w-7xl mx-auto w-[70%] md:w-[80%] bg-white p-8 rounded-xl shadow-2xl mt-5"
         data-aos="fade-up" // Animation for outer container
       >
+        
         {/* Main Title */}
         <h3 className="text-4xl font-bold mb-8 text-black" data-aos="fade-down">
           About ACM

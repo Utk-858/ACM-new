@@ -70,3 +70,16 @@ body {
   to { transform: rotate(360deg); }
 }
 
+
+
+.bg-light {
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.carouselCard {
+  transition: transform 0.3s ease;
+}
+
+.carouselCard:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href={`${asm}`} /> {/* Update this line if you use a different file name or type */}
+        <link rel="icon" href="https://lnmiit.ac.in/wp-content/uploads/2023/11/cropped-lnmiit-icon-32x32.png" /> {/* Update this line if you use a different file name or type */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         

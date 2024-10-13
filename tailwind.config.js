@@ -23,12 +23,11 @@ module.exports = {
         slideInLeft: 'slideInLeft 1s ease-out forwards', // Left-to-right animation
       },
       colors: {
-        navy: {
-          700: '#1a365d',
-          800: '#153e75',
-          900: '#1e3a8a',
-        }
-      }
+        lightBlue: {
+          300: '#85d7ff', // Light blue color
+          500: '#1fb6ff', // Darker light blue for the gradient
+        },
+      },
     },
   },
   plugins: [],
