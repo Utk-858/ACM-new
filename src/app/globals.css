@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family:  "Archivo Black", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @layer utilities {
+    .bg-brown {
+      background-color: #034694; /* Adjust this to your preferred shade of brown */
+    }
+  }
+  
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-in-out;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* You can adjust the values for desired shadow effect */
+}
+
+.front  { transform: rotateY(0deg) translateZ(48px); }
+.right  { transform: rotateY(90deg) translateZ(48px); }
+.back   { transform: rotateY(180deg) translateZ(48px); }
+.left   { transform: rotateY(-90deg) translateZ(48px); }
+.top    { transform: rotateX(90deg) translateZ(48px); }
+.bottom { transform: rotateX(-90deg) translateZ(48px); }
+
+@keyframes rotate-gradient {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
